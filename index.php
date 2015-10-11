@@ -1,5 +1,7 @@
+<HTML>
+<BODY>
 <?php
-$file = fopen("list.txt", "r") or die("Unable to open file!");
+$file = fopen("https://raw.githubusercontent.com/manav245/GreWordList/master/list.txt", "r") or die("Unable to open file!");
 $list = array();
 while(!feof($file)){
     $line = fgets($file);
@@ -7,6 +9,9 @@ while(!feof($file)){
 }
 foreach ($list as $x) {
 	echo $x;
+	echo "<br>";
 	}
 fclose($file);
 ?>
+</BODY>
+</HTML>
